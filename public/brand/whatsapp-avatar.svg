@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="avatarBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1F2421"/>
+      <stop offset="100%" stop-color="#0E1110"/>
+    </linearGradient>
+    <linearGradient id="userGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E2E2DC"/>
+      <stop offset="100%" stop-color="#A8A8A2"/>
+    </linearGradient>
+  </defs>
+  <!-- Circular Background -->
+  <rect width="200" height="200" fill="url(#avatarBg)"/>
+  <circle cx="100" cy="100" r="99" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+  
+  <!-- WhatsApp Classic User Silhouette Shape -->
+  <g fill="url(#userGrad)">
+    <!-- Head -->
+    <circle cx="100" cy="72" r="34"/>
+    <!-- Shoulders / Torso -->
+    <path d="M 42 168 C 42 130, 68 116, 100 116 C 132 116, 158 130, 158 168 C 158 185, 140 195, 100 195 C 60 195, 42 185, 42 168 Z"/>
+  </g>
+</svg>

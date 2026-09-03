@@ -34,12 +34,16 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
         >
           {/* Header Bar */}
           <div className="flex items-center justify-between border-b border-white/16 pb-4">
-            <Link to="/" onClick={onClose} className="flex items-center">
+            <Link to="/" onClick={onClose} className="flex items-center gap-3.5 focus:outline-none">
               <img
                 src="/brand/logo.png"
-                alt="Studio Assiduous Design Co."
-                className="h-16 sm:h-20 w-auto object-contain"
+                alt="Studio Assiduous Logo"
+                className="h-10 w-auto object-contain"
               />
+              <div className="h-5 w-[1px] bg-white/20" />
+              <span className="text-xs tracking-[0.25em] text-white font-medium uppercase mt-0.5 whitespace-nowrap">
+                Studio Assiduous
+              </span>
             </Link>
 
             <button

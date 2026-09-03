@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowUpRight } from 'lucide-react';
 import { SectionLabel } from '../ui/SectionLabel';
+import { STUDIO_INFO } from '../../data/projects';
 
 export const ServicesOverview: React.FC = () => {
   const [hoveredIdx, setHoveredIdx] = useState<number | null>(null);
@@ -30,13 +31,16 @@ export const ServicesOverview: React.FC = () => {
   ];
 
   return (
-    <section className="bg-[#050505] text-[#F2F2EE] py-24 md:py-36 px-6 md:px-12 border-b border-white/16">
-      <div className="max-w-7xl mx-auto space-y-16">
+    <section className="bg-[#050505] text-[#F2F2EE] py-16 md:py-24 px-6 md:px-12 border-b border-white/16">
+      <div className="max-w-7xl mx-auto space-y-12 md:space-y-16">
         <div className="space-y-4">
           <SectionLabel label="DISCIPLINES & SERVICES" />
           <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-light tracking-tight uppercase">
             CORE DISCIPLINES
           </h2>
+          <p className="font-editorial text-base sm:text-lg text-[#F2F2EE]/80 max-w-3xl leading-relaxed font-light pt-2">
+            {STUDIO_INFO.placeholderCopy.servicesLeadIn}
+          </p>
         </div>
 
         {/* Minimal List with Thin Horizontal Lines */}

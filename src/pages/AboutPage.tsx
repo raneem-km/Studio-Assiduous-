@@ -7,8 +7,8 @@ import { STUDIO_INFO } from '../data/projects';
 export const AboutPage: React.FC = () => {
   return (
     <PageTransition>
-      <main className="bg-[#050505] text-[#F2F2EE] pt-32 pb-36 px-6 md:px-12 min-h-screen">
-        <div className="max-w-7xl mx-auto space-y-24">
+      <main className="bg-[#050505] text-[#F2F2EE] pt-24 md:pt-28 pb-16 md:pb-24 px-6 md:px-12 min-h-screen">
+        <div className="max-w-7xl mx-auto space-y-16 md:space-y-24">
           {/* Header */}
           <div className="space-y-6">
             <SectionLabel label="STUDIO PROFILE" />
@@ -82,12 +82,12 @@ export const AboutPage: React.FC = () => {
           </div>
 
           {/* Studio Image & Location Details */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center border-t border-white/16 pt-16">
-            <div className="lg:col-span-6 bg-[#0B0B0B] border border-white/16 overflow-hidden aspect-[4/3]">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center border-t border-white/16 pt-12 md:pt-16">
+            <div className="lg:col-span-6 bg-[#0B0B0B] border border-white/16 overflow-hidden aspect-[4/3] group relative cursor-pointer">
               <img
                 src="/projects/interior-2100/02.jpg"
                 alt="Studio Assiduous Staircase Detail"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover transition-transform duration-700 ease-[0.16,1,0.3,1] group-hover:scale-105"
               />
             </div>
 

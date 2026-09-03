@@ -29,8 +29,8 @@ export const ProjectsPage: React.FC = () => {
 
   return (
     <PageTransition>
-      <main className="bg-[#050505] text-[#F2F2EE] pt-32 pb-36 px-6 md:px-12 min-h-screen">
-        <div className="max-w-7xl mx-auto space-y-16">
+      <main className="bg-[#050505] text-[#F2F2EE] pt-24 md:pt-28 pb-16 md:pb-24 px-6 md:px-12 min-h-screen">
+        <div className="max-w-7xl mx-auto space-y-12 md:space-y-16">
           {/* Header Section */}
           <div className="space-y-6">
             <SectionLabel label="PORTFOLIO" />
@@ -50,7 +50,7 @@ export const ProjectsPage: React.FC = () => {
           />
 
           {/* Project List / Grid */}
-          <motion.div layout className="space-y-24 md:space-y-36 pt-6">
+          <motion.div layout className="space-y-16 md:space-y-28 pt-6">
             <AnimatePresence mode="popLayout">
               {filteredProjects.length > 0 ? (
                 filteredProjects.map((project, idx) => (

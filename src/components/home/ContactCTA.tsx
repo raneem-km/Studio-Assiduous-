@@ -7,8 +7,8 @@ import { STUDIO_INFO } from '../../data/projects';
 
 export const ContactCTA: React.FC = () => {
   return (
-    <section className="bg-[#050505] text-[#F2F2EE] py-28 md:py-40 px-6 md:px-12">
-      <div className="max-w-7xl mx-auto space-y-16">
+    <section className="bg-[#050505] text-[#F2F2EE] py-16 md:py-24 px-6 md:px-12">
+      <div className="max-w-7xl mx-auto space-y-12 md:space-y-16">
         <SectionLabel label="INITIATE PROJECT" />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end justify-between">

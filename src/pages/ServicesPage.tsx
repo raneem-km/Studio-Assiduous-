@@ -41,10 +41,10 @@ export const ServicesPage: React.FC = () => {
 
   return (
     <PageTransition>
-      <main className="bg-[#050505] text-[#F2F2EE] pt-32 pb-36 px-6 md:px-12 min-h-screen">
-        <div className="max-w-7xl mx-auto space-y-24">
+      <main className="bg-[#050505] text-[#F2F2EE] pt-24 md:pt-28 pb-16 md:pb-24 px-6 md:px-12 min-h-screen">
+        <div className="max-w-7xl mx-auto space-y-16 md:space-y-24">
           {/* Header */}
-          <div className="space-y-6 border-b border-white/16 pb-12">
+          <div className="space-y-6 border-b border-white/16 pb-8 md:pb-12">
             <SectionLabel label="SERVICES & DISCIPLINES" />
             <h1 className="font-display text-5xl sm:text-7xl md:text-8xl font-light tracking-tight uppercase leading-[0.95]">
               OUR PRACTICE
@@ -55,7 +55,7 @@ export const ServicesPage: React.FC = () => {
           </div>
 
           {/* 4 Large Service Sections */}
-          <div className="space-y-36">
+          <div className="space-y-16 md:space-y-28">
             {serviceSections.map((section, idx) => {
               const isEven = idx % 2 === 0;
 
@@ -103,11 +103,11 @@ export const ServicesPage: React.FC = () => {
                   </div>
 
                   {/* Image Display */}
-                  <div className={`bg-[#0B0B0B] border border-white/16 overflow-hidden aspect-[4/3] ${isEven ? 'lg:col-span-6' : 'lg:col-span-6 lg:order-1'}`}>
+                  <div className={`bg-[#0B0B0B] border border-white/16 overflow-hidden aspect-[4/3] group relative cursor-pointer ${isEven ? 'lg:col-span-6' : 'lg:col-span-6 lg:order-1'}`}>
                     <img
                       src={section.image}
                       alt={section.title}
-                      className="w-full h-full object-cover filter brightness-95 hover:scale-[1.02] transition-transform duration-700"
+                      className="w-full h-full object-cover filter brightness-95 transition-transform duration-700 ease-[0.16,1,0.3,1] group-hover:scale-105"
                     />
                   </div>
                 </motion.section>

@@ -39,13 +39,22 @@ export const Navbar: React.FC = () => {
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
-          {/* Logo Left - Exact original logo & color, enlarged for prominent visibility */}
-          <Link to="/" className="group flex items-center gap-4 focus:outline-none" aria-label="Studio Assiduous Home">
+          {/* Logo Left - Option 1: The Minimalist Divider */}
+          <Link to="/" className="group flex items-center gap-3.5 sm:gap-4 focus:outline-none" aria-label="Studio Assiduous Home">
+            {/* 1. The Logo Mark */}
             <img
               src="/brand/logo.png"
-              alt="Studio Assiduous Design Co."
-              className="h-14 md:h-16 lg:h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+              alt="Studio Assiduous Logo"
+              className="h-10 sm:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
             />
+
+            {/* 2. The Subtle Vertical Divider */}
+            <div className="h-5 sm:h-6 w-[1px] bg-white/20" />
+
+            {/* 3. The Premium Firm Name */}
+            <span className="text-xs sm:text-sm tracking-[0.25em] text-white font-medium uppercase mt-0.5 whitespace-nowrap transition-colors duration-300 group-hover:text-[#F2F2EE]/80">
+              Studio Assiduous
+            </span>
           </Link>
 
           {/* Desktop Nav Right */}

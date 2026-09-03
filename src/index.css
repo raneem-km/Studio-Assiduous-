@@ -48,6 +48,10 @@
   font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
 }
 
+.font-serif {
+  font-family: 'Cormorant Garamond', ui-serif, Georgia, Cambria, 'Times New Roman', serif;
+}
+
 /* Thin architectural grid rules */
 .architectural-grid {
   background-image: 

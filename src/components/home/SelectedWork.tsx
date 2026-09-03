@@ -19,8 +19,8 @@ export const SelectedWork: React.FC = () => {
   };
 
   return (
-    <section className="bg-[#050505] text-[#F2F2EE] py-24 md:py-36 px-6 md:px-12 border-b border-white/16">
-      <div className="max-w-7xl mx-auto space-y-16">
+    <section className="bg-[#050505] text-[#F2F2EE] py-16 md:py-24 px-6 md:px-12 border-b border-white/16">
+      <div className="max-w-7xl mx-auto space-y-12 md:space-y-16">
         {/* Section Header */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
           <div className="space-y-4">
@@ -40,7 +40,7 @@ export const SelectedWork: React.FC = () => {
         </div>
 
         {/* Editorial Layout of Projects */}
-        <div className="space-y-24 md:space-y-36">
+        <div className="space-y-16 md:space-y-28">
           {selectedProjects.map((project, idx) => (
             <ProjectCard
               key={project.slug}

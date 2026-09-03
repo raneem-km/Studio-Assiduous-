@@ -56,13 +56,17 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       >
         {/* Project Image Frame */}
         <div className={`relative overflow-hidden bg-[#0B0B0B] ${getImageSpan()}`}>
-          <div className="overflow-hidden aspect-[16/10] w-full">
+          <div className="relative overflow-hidden aspect-[16/10] w-full">
             <motion.img
               src={project.cover}
               alt={project.title}
               loading="lazy"
-              className="w-full h-full object-cover object-center transition-transform duration-700 ease-[0.16,1,0.3,1] group-hover:scale-[1.03]"
+              className="w-full h-full object-cover object-center transition-transform duration-700 ease-[0.16,1,0.3,1] group-hover:scale-105"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            <div className="absolute bottom-6 left-6 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 pointer-events-none">
+              <h4 className="text-white text-lg tracking-wide font-display">{project.title}</h4>
+            </div>
           </div>
         </div>
 

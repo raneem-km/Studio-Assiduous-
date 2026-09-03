@@ -5,7 +5,7 @@ import { STUDIO_INFO } from '../../data/projects';
 
 export const StudioIntro: React.FC = () => {
   return (
-    <section className="bg-[#050505] text-[#F2F2EE] py-24 md:py-36 px-6 md:px-12 border-b border-white/16">
+    <section className="bg-[#050505] text-[#F2F2EE] py-16 md:py-24 px-6 md:px-12 border-b border-white/16">
       <div className="max-w-7xl mx-auto space-y-12">
         <SectionLabel label="OUR PHILOSOPHY" />
 
@@ -32,9 +32,6 @@ export const StudioIntro: React.FC = () => {
             className="lg:col-span-4 space-y-6 pt-2 font-editorial text-base sm:text-lg text-[#F2F2EE]/85 font-light leading-relaxed"
           >
             <p>{STUDIO_INFO.placeholderCopy.introText}</p>
-            <p className="font-mono text-sm text-[#F2F2EE]/75 tracking-widest uppercase pt-4 border-t border-white/10 font-medium">
-              MANJERI · MALAPPURAM, KERALA · INDIA
-            </p>
           </motion.div>
         </div>
       </div>

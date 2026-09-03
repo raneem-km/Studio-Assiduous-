@@ -99,7 +99,8 @@ export const PROJECTS: Project[] = [
       '/projects/interior-2100/cover.jpg',
       '/projects/interior-2100/01.jpg',
       '/projects/interior-2100/02.jpg',
-      '/projects/interior-2100/03.jpg'
+      '/projects/interior-2100/03.jpg',
+      '/projects/interior-2100/04.jpg'
     ],
     services: ['Interior Design', 'Spatial Styling', 'Custom Joinery'],
     featured: true
@@ -121,7 +122,9 @@ export const STUDIO_INFO = {
   placeholderCopy: {
     heroStatement: 'DESIGNING DREAMS INTO REALITY, ONE SPACE AT A TIME.',
     introStatement: 'ARCHITECTURAL FIRM · INTERIORS & LANDSCAPES.',
-    introText: 'Studio Assiduous is a multidisciplinary architectural firm based in Manjeri, Kerala, exploring architecture, interiors, landscape, and spatial art through considered design.',
+    introText: 'We are a multidisciplinary design studio exploring the boundaries of architecture, bespoke interiors, landscape integration, and spatial art. Rooted in Kerala, our practice is driven by considered design and meticulous attention to detail. We believe that a great building does more than provide shelter—it actively shapes the way you live, work, and interact with the world around you.',
+    footerAbout: 'Studio Assiduous is a multidisciplinary architectural practice exploring the intersection of architecture, interiors, landscape, and spatial art. Based in Manjeri, we are dedicated to shaping environments across Kerala through considered, purpose-driven design. From concept to execution, we craft enduring spaces that elevate daily life.',
+    servicesLeadIn: 'Studio Assiduous is a multidisciplinary firm exploring architecture, interior environments, landscape, and spatial art across Kerala. Through considered design and precise execution, we translate complex visions into built realities. Discover how we approach each discipline to create spaces that live with you.',
     aboutStatement: 'THE ARCHITECTURAL PRACTICE',
     aboutDescription: 'Rooted in Manjeri, Kerala, Studio Assiduous is an architectural firm operating at the intersection of structural rigor, material honesty, and spatial serenity. Every project is an inquiry into light, proportion, texture, and climate responsiveness.'
   }

@@ -32,7 +32,7 @@ export const Hero: React.FC = () => {
   return (
     <section
       ref={heroRef}
-      className="relative min-h-screen w-full bg-[#050505] overflow-hidden flex flex-col justify-between py-32 md:py-48 px-6 md:px-12 selection:bg-[#F2F2EE] selection:text-[#050505]"
+      className="relative min-h-[100svh] min-h-screen w-full bg-[#050505] overflow-hidden flex flex-col justify-between py-24 sm:py-32 md:py-40 px-5 sm:px-8 md:px-12 lg:px-16 2xl:px-24 selection:bg-[#F2F2EE] selection:text-[#050505]"
     >
       {/* Background Architectural Photograph with Continuous 'Ken Burns' Slow Zoom Animation */}
       <motion.div
@@ -51,25 +51,25 @@ export const Hero: React.FC = () => {
             repeatType: 'reverse',
             ease: 'easeInOut',
           }}
-          className="w-full h-full object-cover object-center filter contrast-[1.04]"
+          className="w-full h-full object-cover object-[70%_center] md:object-center filter contrast-[1.04]"
         />
 
         {/* Dual-Gradient Scrim: Vertical and Horizontal to keep text readable while top right is 100% visible & vibrant */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/50 to-transparent pointer-events-none" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/70 via-transparent to-transparent pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/50 md:via-[#0a0a0a]/40 to-transparent pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/85 via-[#0a0a0a]/40 md:from-[#0a0a0a]/70 md:via-transparent to-transparent pointer-events-none" />
       </motion.div>
 
       {/* Main Left-Aligned Editorial Headline Content */}
-      <div className="relative z-10 max-w-7xl mx-auto w-full my-auto text-left">
-        <div className="max-w-5xl space-y-6 md:space-y-8">
+      <div className="relative z-10 max-w-[1700px] mx-auto w-full my-auto text-left">
+        <div className="max-w-5xl 2xl:max-w-6xl space-y-5 sm:space-y-6 md:space-y-8">
           {/* Pill Badge */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: loaded ? 1 : 0, y: loaded ? 0 : 15 }}
             transition={{ duration: 0.8, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
           >
-            <div className="inline-block px-4 py-1.5 backdrop-blur-md bg-black/30 rounded-full border border-white/10 mb-6">
-              <span className="text-xs tracking-[0.2em] text-white uppercase">
+            <div className="inline-block px-3.5 sm:px-4 py-1.5 backdrop-blur-md bg-black/35 rounded-full border border-white/10 mb-4 sm:mb-6">
+              <span className="text-[10px] sm:text-xs tracking-[0.2em] text-white uppercase font-mono">
                 Architectural Firm · Manjeri · Malappuram, Kerala · India
               </span>
             </div>
@@ -80,13 +80,13 @@ export const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: loaded ? 1 : 0, y: loaded ? 0 : 20 }}
             transition={{ duration: 0.8, delay: 0.25, ease: [0.16, 1, 0.3, 1] }}
-            className="font-sans text-xs md:text-sm uppercase tracking-[0.3em] text-gray-400 font-medium"
+            className="font-sans text-[11px] sm:text-xs md:text-sm uppercase tracking-[0.3em] text-gray-400 font-medium"
           >
             DESIGN THAT LIVES WITH YOU.
           </motion.p>
 
           {/* Main Headline: WHERE LIFE TAKES SHAPE. with masked overflow reveal */}
-          <h1 className="font-display font-light text-5xl md:text-7xl lg:text-8xl xl:text-9xl text-white leading-tight drop-shadow-2xl">
+          <h1 className="font-display font-light text-4xl sm:text-6xl md:text-7xl lg:text-8xl 2xl:text-9xl text-white leading-[1.08] tracking-tight drop-shadow-2xl">
             {/* Line 1 */}
             <div className="overflow-hidden">
               <motion.div
@@ -116,10 +116,10 @@ export const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: loaded ? 1 : 0, y: loaded ? 0 : 25 }}
             transition={{ duration: 0.8, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
-            className="pt-2 flex flex-wrap items-center gap-3 sm:gap-6 font-sans text-xs sm:text-sm tracking-[0.2em] text-gray-300 uppercase font-light"
+            className="pt-2 flex flex-wrap items-center gap-2.5 sm:gap-6 font-sans text-[11px] sm:text-xs md:text-sm tracking-[0.18em] sm:tracking-[0.2em] text-gray-300 uppercase font-light"
           >
             {STUDIO_INFO.disciplines.map((discipline, idx) => (
-              <span key={discipline} className="inline-flex items-center gap-3 sm:gap-6">
+              <span key={discipline} className="inline-flex items-center gap-2.5 sm:gap-6">
                 <span>{discipline}</span>
                 {idx < STUDIO_INFO.disciplines.length - 1 && (
                   <span className="text-white/20">·</span>
@@ -135,7 +135,7 @@ export const Hero: React.FC = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: loaded ? 1 : 0 }}
         transition={{ duration: 0.8, delay: 0.8 }}
-        className="relative z-10 max-w-7xl mx-auto w-full flex items-center justify-between pt-6 font-sans text-xs md:text-sm tracking-[0.2em] text-gray-400 uppercase"
+        className="relative z-10 max-w-[1700px] mx-auto w-full flex items-center justify-between pt-6 font-sans text-xs md:text-sm tracking-[0.2em] text-gray-400 uppercase"
       >
         <button
           onClick={scrollToNext}

@@ -38,7 +38,7 @@ export const Navbar: React.FC = () => {
             : 'bg-transparent border-transparent py-5 md:py-7'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
+        <div className="max-w-[1700px] mx-auto px-5 sm:px-8 md:px-12 lg:px-16 2xl:px-24 flex items-center justify-between">
           {/* Logo Left - Option 1: The Minimalist Divider */}
           <Link to="/" className="group flex items-center gap-3.5 sm:gap-4 focus:outline-none" aria-label="Studio Assiduous Home">
             {/* 1. The Logo Mark */}

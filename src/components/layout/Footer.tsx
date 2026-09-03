@@ -13,8 +13,8 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-[#050505] text-[#F2F2EE] border-t border-white/16 pt-20 md:pt-28 pb-12 px-6 md:px-12 relative font-sans">
-      <div className="max-w-7xl mx-auto space-y-16 md:space-y-20">
+    <footer className="bg-[#050505] text-[#F2F2EE] border-t border-white/16 pt-20 md:pt-28 pb-12 px-5 sm:px-8 md:px-12 lg:px-16 2xl:px-24 relative font-sans">
+      <div className="max-w-[1700px] mx-auto space-y-16 md:space-y-20">
         {/* Massive Thin-Font Call to Action: LET'S TALK. */}
         <div className="border-b border-white/10 pb-12 md:pb-16">
           <Link

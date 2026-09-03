@@ -40,8 +40,8 @@ export const ProjectDetailPage: React.FC = () => {
 
   return (
     <PageTransition>
-      <main className="bg-[#050505] text-[#F2F2EE] pt-24 md:pt-28 pb-16 md:pb-24 px-6 md:px-12 min-h-screen">
-        <div className="max-w-7xl mx-auto space-y-12 md:space-y-16">
+      <main className="bg-[#050505] text-[#F2F2EE] pt-24 md:pt-28 pb-16 md:pb-24 px-5 sm:px-8 md:px-12 lg:px-16 2xl:px-24 min-h-screen">
+        <div className="max-w-[1700px] mx-auto space-y-12 md:space-y-16">
           {/* Top Breadcrumb & Section Label */}
           <div className="flex items-center justify-between border-b border-white/16 pb-6">
             <Link

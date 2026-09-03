@@ -30,8 +30,8 @@ export const StudioOverview: React.FC = () => {
   }, []);
 
   return (
-    <section className="bg-[#050505] text-[#F2F2EE] py-16 md:py-24 px-6 md:px-12 border-b border-white/16">
-      <div className="max-w-7xl mx-auto space-y-12 md:space-y-16">
+    <section className="bg-[#050505] text-[#F2F2EE] py-16 md:py-24 px-5 sm:px-8 md:px-12 lg:px-16 2xl:px-24 border-b border-white/16">
+      <div className="max-w-[1700px] mx-auto space-y-12 md:space-y-16">
         <SectionLabel label="OUR PRACTICE" />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">

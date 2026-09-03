@@ -10,7 +10,7 @@ export const ServicesPage: React.FC = () => {
       title: 'ARCHITECTURE',
       subtitle: 'RESIDENTIAL VILLAS & SPATIAL MASTERPLANNING',
       description: 'Comprehensive architectural planning and design for bespoke private residences, villas, and commercial structures across Kerala. Our architectural approach emphasizes thermal comfort, natural ventilation, terracotta brick jali screens, and structural geometry.',
-      image: '/projects/aakruti/cover.jpg',
+      image: '/projects/aakruti/cover.jpg?v=2',
       deliverables: ['Conceptual Masterplanning', 'Detailed Architectural Schemes', 'Structural & Material Specification', 'Site Supervision & Quality Audits']
     },
     {
@@ -18,7 +18,7 @@ export const ServicesPage: React.FC = () => {
       title: 'INTERIOR DESIGN',
       subtitle: 'REFINED RESIDENTIAL & SPATIAL SUITES',
       description: 'Custom interior environments designed with spatial restraint and quiet luxury. We craft bespoke modular joinery, dark timber paneling, concealed lighting, sheer drapery, and curated furniture layouts.',
-      image: '/projects/interior-2100/cover.jpg',
+      image: '/projects/interior-2100/cover.jpg?v=2',
       deliverables: ['Interior Layout Schemes', 'Custom Kitchen & Joinery Design', 'Lighting & Ceiling Layouts', 'Material & Furniture Selection']
     },
     {
@@ -26,7 +26,7 @@ export const ServicesPage: React.FC = () => {
       title: 'LANDSCAPE',
       subtitle: 'INTEGRATED VERDANT COURTYARDS & HARDSCAPES',
       description: 'Landscape design that connects architectural structures seamlessly with native Malabar vegetation. We incorporate permeable grass pavers, bamboo screens, cascading planter terraces, and peaceful water elements.',
-      image: '/projects/meadow-view/cover.jpg',
+      image: '/projects/meadow-view/cover.jpg?v=2',
       deliverables: ['Site Landscape Design', 'Hardscape & Permeable Paver Layouts', 'Tropical Planting Schemes', 'Courtyard & Outdoor Lighting']
     },
     {
@@ -34,7 +34,7 @@ export const ServicesPage: React.FC = () => {
       title: 'ART',
       subtitle: 'SITE-SPECIFIC INSTALLATIONS & VISUALIZATIONS',
       description: 'Spatial artwork, custom architectural murals, and high-fidelity 3D architectural visual art that embody the philosophical ethos of Studio Assiduous.',
-      image: '/projects/avni-house/cover.jpg',
+      image: '/projects/avni-house/cover.jpg?v=2',
       deliverables: ['Architectural Visualizations', 'Site-Specific Art Curation', 'Textural Wall Murals', 'Design Documentation']
     }
   ];

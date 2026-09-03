@@ -24,10 +24,9 @@ export const PROJECTS: Project[] = [
     year: '2025',
     area: '3,200 SQ FT',
     description: 'A contemporary tropical residence exploring terracotta brick jali masonry, exposed timber rafters, and quiet courtyard light. Designed to harmonize traditional Kerala sloping roofs with minimalist spatial geometry.',
-    cover: '/projects/aakruti/cover.jpg',
+    cover: '/projects/aakruti/cover.jpg?v=2',
     images: [
-      '/projects/aakruti/cover.jpg',
-      '/projects/aakruti/01.jpg'
+      '/projects/aakruti/cover.jpg?v=2'
     ],
     services: ['Architecture', 'Interior Design', 'Landscape'],
     featured: true,
@@ -42,9 +41,9 @@ export const PROJECTS: Project[] = [
     year: '2025',
     area: '4,100 SQ FT',
     description: 'An architectural composition of cantilevered geometric volumes, brick jali privacy screens, and permeable driveway paving that frames surrounding tropical flora.',
-    cover: '/projects/grids-n-boxes/cover.jpg',
+    cover: '/projects/grids-n-boxes/cover.jpg?v=2',
     images: [
-      '/projects/grids-n-boxes/cover.jpg'
+      '/projects/grids-n-boxes/cover.jpg?v=2'
     ],
     services: ['Architecture', 'Landscape Design'],
     featured: true,
@@ -59,10 +58,10 @@ export const PROJECTS: Project[] = [
     year: '2024',
     area: '2,850 SQ FT',
     description: 'A quiet residential villa featuring a signature circular aperture entrance wall, exposed brick accents, dark timber joinery, and cascading green terraces.',
-    cover: '/projects/avni-house/cover.jpg',
+    cover: '/projects/avni-house/cover.jpg?v=2',
     images: [
-      '/projects/avni-house/cover.jpg',
-      '/projects/avni-house/01.jpg'
+      '/projects/avni-house/cover.jpg?v=2',
+      '/projects/avni-house/01.jpg?v=2'
     ],
     services: ['Architecture', 'Interior Design', 'Landscape'],
     featured: true,
@@ -77,10 +76,10 @@ export const PROJECTS: Project[] = [
     year: '2025',
     area: '3,600 SQ FT',
     description: 'A modern villa defined by perforated terracotta jali facades, exposed concrete structural frames, steel pergolas, and integrated bamboo planters.',
-    cover: '/projects/meadow-view/cover.jpg',
+    cover: '/projects/meadow-view/cover.jpg?v=2',
     images: [
-      '/projects/meadow-view/cover.jpg',
-      '/projects/meadow-view/01.jpg'
+      '/projects/meadow-view/cover.jpg?v=2',
+      '/projects/meadow-view/01.jpg?v=2'
     ],
     services: ['Architecture', 'Interior Design', 'Landscape', 'Art'],
     featured: true
@@ -94,13 +93,13 @@ export const PROJECTS: Project[] = [
     year: '2025',
     area: '2,100 SQ FT',
     description: 'An ultra-refined monochrome interior suite highlighting double-height sheer drapery, custom gray modular kitchen cabinetry, exposed concrete ceilings, floating steel stairs, and muted leather furnishings.',
-    cover: '/projects/interior-2100/cover.jpg',
+    cover: '/projects/interior-2100/cover.jpg?v=2',
     images: [
-      '/projects/interior-2100/cover.jpg',
-      '/projects/interior-2100/01.jpg',
-      '/projects/interior-2100/02.jpg',
-      '/projects/interior-2100/03.jpg',
-      '/projects/interior-2100/04.jpg'
+      '/projects/interior-2100/cover.jpg?v=2',
+      '/projects/interior-2100/01.jpg?v=2',
+      '/projects/interior-2100/02.jpg?v=2',
+      '/projects/interior-2100/03.jpg?v=2',
+      '/projects/interior-2100/04.jpg?v=2'
     ],
     services: ['Interior Design', 'Spatial Styling', 'Custom Joinery'],
     featured: true

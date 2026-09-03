@@ -28,53 +28,45 @@ export const AboutPage: React.FC = () => {
             className="overflow-hidden bg-[#0B0B0B] border border-white/16 aspect-[21/9]"
           >
             <img
-              src="/projects/meadow-view/cover.jpg"
+              src="/projects/meadow-view/cover.jpg?v=2"
               alt="Studio Assiduous Architecture"
               className="w-full h-full object-cover filter brightness-95"
             />
           </motion.div>
 
-          {/* Philosophy & Approach Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-            <div className="lg:col-span-5 space-y-4">
-              <span className="font-mono text-sm sm:text-base font-semibold text-[#F2F2EE]/75 tracking-widest uppercase">
-                OUR PHILOSOPHY
-              </span>
-              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-light uppercase">
-                SPATIAL SERENITY & MATERIAL HONESTY
-              </h2>
-            </div>
-
-            <div className="lg:col-span-7 space-y-6 font-editorial text-lg sm:text-xl text-[#F2F2EE]/85 leading-relaxed font-light">
+          {/* Philosophy Statement */}
+          <div className="max-w-4xl space-y-8">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-light uppercase tracking-tight leading-snug">
+              OPERATING AT THE INTERSECTION OF STRUCTURAL RIGOR, MATERIAL HONESTY, AND SPATIAL SERENITY.
+            </h2>
+            <div className="space-y-6 font-editorial text-base sm:text-lg text-[#F2F2EE]/85 font-light leading-relaxed">
               <p>
-                Founded in Manjeri, Kerala, Studio Assiduous operates as a multidisciplinary architecture and design practice. We explore the dialogue between traditional vernacular wisdom and minimalist contemporary geometry.
+                Studio Assiduous is a multidisciplinary architectural practice rooted in Manjeri, Malappuram, Kerala. We explore architecture, bespoke interiors, landscape integration, and spatial art through an uncompromising commitment to climatic sensitivity, proportional clarity, and tactile material resonance.
               </p>
               <p>
-                Our projects are defined by tactile material palettes—exposed clay brick jali screens, natural timber joinery, raw concrete surfaces, and permeable green courtyards designed for Malabar climate conditions.
+                Every project begins with a careful reading of place, topography, and the micro-climate of Kerala. We reject generic trends in favor of timeless spaces that age with dignity—weaving brick masonry, natural clay roof tiles, exposed structural concrete, and handcrafted timber into contemporary domestic and commercial narratives.
               </p>
             </div>
           </div>
 
-          {/* Four Disciplines Grid */}
-          <div className="space-y-12 border-t border-white/16 pt-16">
-            <div className="flex items-center justify-between">
-              <span className="font-mono text-sm sm:text-base font-semibold text-[#F2F2EE]/75 tracking-widest uppercase">
-                CORE DISCIPLINES
-              </span>
-              <span className="font-mono text-sm text-[#F2F2EE]/60 tracking-wider">MANJERI · KERALA</span>
-            </div>
+          {/* Key Principles Grid */}
+          <div className="space-y-8 border-t border-white/16 pt-12 md:pt-16">
+            <span className="font-mono text-sm sm:text-base font-semibold text-[#F2F2EE]/75 tracking-widest uppercase">
+              GUIDING PRINCIPLES
+            </span>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-              {STUDIO_INFO.disciplines.map((disc) => (
-                <div
-                  key={disc}
-                  className="p-8 bg-[#0B0B0B] border border-white/16 space-y-4"
-                >
-                  <h3 className="font-display text-2xl font-light tracking-wide uppercase">
-                    {disc}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {[
+                { title: 'CLIMATIC SENSITIVITY', desc: 'Passive cooling, deep roof overhangs, cross-ventilation, and terracotta brick jali screens tailored to Kerala tropical rainfall and sunlight.' },
+                { title: 'MATERIAL INTEGRITY', desc: 'Honest expression of raw materials—exposed laterite, concrete, warm teak joinery, and natural slate that develop character over time.' },
+                { title: 'SPATIAL ARTISTRY', desc: 'Interiors and landscapes conceived as extensions of architecture, crafting fluid transitions between indoor sanctuary and lush garden courtyards.' },
+              ].map((principle) => (
+                <div key={principle.title} className="border border-white/16 p-8 space-y-4 bg-[#080808]">
+                  <h3 className="font-display text-xl sm:text-2xl font-light tracking-wide uppercase text-white">
+                    {principle.title}
                   </h3>
                   <p className="font-editorial text-sm sm:text-base text-[#F2F2EE]/80 leading-relaxed font-light">
-                    Considered spatial design tailored to user intent, environmental harmony, and architectural precision.
+                    {principle.desc}
                   </p>
                 </div>
               ))}
@@ -85,7 +77,7 @@ export const AboutPage: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center border-t border-white/16 pt-12 md:pt-16">
             <div className="lg:col-span-6 bg-[#0B0B0B] border border-white/16 overflow-hidden aspect-[4/3] group relative cursor-pointer">
               <img
-                src="/projects/interior-2100/02.jpg"
+                src="/projects/interior-2100/02.jpg?v=2"
                 alt="Studio Assiduous Staircase Detail"
                 className="w-full h-full object-cover transition-transform duration-700 ease-[0.16,1,0.3,1] group-hover:scale-105"
               />

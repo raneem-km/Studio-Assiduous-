@@ -44,8 +44,8 @@ export const StudioOverview: React.FC = () => {
           >
             <video
               ref={videoRef}
-              src="/brand/studio-reel.mp4"
-              poster="/projects/aakruti/cover.jpg"
+              src="/brand/studio-reel.mp4?v=2"
+              poster="/projects/aakruti/cover.jpg?v=2"
               autoPlay
               muted
               loop

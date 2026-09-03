@@ -40,7 +40,7 @@ export const Hero: React.FC = () => {
         className="absolute inset-0 z-0 overflow-hidden"
       >
         <motion.img
-          src="/projects/meadow-view/01.jpg"
+          src="/projects/meadow-view/01.jpg?v=2"
           alt="Studio Assiduous Architecture"
           animate={{
             scale: [1, 1.15],

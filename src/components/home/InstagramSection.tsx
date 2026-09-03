@@ -6,12 +6,12 @@ import { STUDIO_INFO } from '../../data/projects';
 
 export const InstagramSection: React.FC = () => {
   const gridImages = [
-    { src: '/projects/hero-meadow.jpg', alt: 'Meadow View Architecture' },
-    { src: '/projects/aakruti/cover.jpg', alt: 'Aakruti Residence' },
-    { src: '/projects/interior-2100/cover.jpg', alt: 'Residence Interior 2100' },
-    { src: '/projects/avni-house/cover.jpg', alt: 'Avni House Manjeri' },
-    { src: '/projects/interior-2100/02.jpg', alt: 'Dining & Concrete Staircase' },
-    { src: '/projects/grids-n-boxes/cover.jpg', alt: 'Grids n Boxes Residence' },
+    { src: '/projects/hero-meadow.jpg?v=2', alt: 'Meadow View Architecture' },
+    { src: '/projects/aakruti/cover.jpg?v=2', alt: 'Aakruti Residence' },
+    { src: '/projects/interior-2100/cover.jpg?v=2', alt: 'Residence Interior 2100' },
+    { src: '/projects/avni-house/cover.jpg?v=2', alt: 'Avni House Manjeri' },
+    { src: '/projects/interior-2100/02.jpg?v=2', alt: 'Dining & Concrete Staircase' },
+    { src: '/projects/grids-n-boxes/cover.jpg?v=2', alt: 'Grids n Boxes Residence' },
   ];
 
   return (

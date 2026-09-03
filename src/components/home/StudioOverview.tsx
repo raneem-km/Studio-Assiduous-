@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { SectionLabel } from '../ui/SectionLabel';
+import { AnimatedHeading } from '../ui/AnimatedHeading';
 import { STUDIO_INFO } from '../../data/projects';
 
 export const StudioOverview: React.FC = () => {
@@ -69,9 +70,10 @@ export const StudioOverview: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="lg:col-span-5 space-y-8"
           >
-            <h2 className="font-display text-4xl sm:text-5xl font-light tracking-tight uppercase">
-              {STUDIO_INFO.placeholderCopy.aboutStatement}
-            </h2>
+            <AnimatedHeading
+              text={STUDIO_INFO.placeholderCopy.aboutStatement}
+              className="font-display text-4xl sm:text-5xl font-light tracking-tight uppercase text-white"
+            />
 
             <p className="font-editorial text-base sm:text-lg text-[#F2F2EE]/85 leading-relaxed font-light">
               {STUDIO_INFO.placeholderCopy.aboutDescription}

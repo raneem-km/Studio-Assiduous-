@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowUpRight } from 'lucide-react';
 import type { Project } from '../../data/projects';
+import { AnimatedImage } from '../ui/AnimatedImage';
+import { AnimatedHeading } from '../ui/AnimatedHeading';
 
 interface ProjectCardProps {
   project: Project;
@@ -54,13 +56,13 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         className={getContainerLayout()}
         data-cursor="VIEW"
       >
-        {/* Project Image Frame */}
+        {/* Project Image Frame with Parallax Scale Reveal */}
         <div className={`relative overflow-hidden bg-[#0B0B0B] ${getImageSpan()}`}>
           <div className="relative overflow-hidden aspect-[16/10] w-full">
-            <motion.img
+            <AnimatedImage
               src={project.cover}
               alt={project.title}
-              loading="lazy"
+              aspectRatio="aspect-[16/10]"
               className="w-full h-full object-cover object-center transition-transform duration-700 ease-[0.16,1,0.3,1] group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
@@ -78,9 +80,11 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
               <span>·</span>
               <span>{project.location}</span>
             </div>
-            <h3 className="font-display text-3xl sm:text-4xl md:text-5xl font-light text-[#F2F2EE] tracking-tight group-hover:text-white transition-colors">
-              {project.title}
-            </h3>
+            <AnimatedHeading
+              text={project.title}
+              as="h3"
+              className="font-display text-3xl sm:text-4xl md:text-5xl font-light text-[#F2F2EE] tracking-tight group-hover:text-white transition-colors"
+            />
             {project.subtitle && (
               <p className="font-mono text-sm sm:text-base text-[#8A8A86] tracking-wide">
                 {project.subtitle}

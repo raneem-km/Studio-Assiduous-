@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowUpRight } from 'lucide-react';
 import { SectionLabel } from '../ui/SectionLabel';
+import { AnimatedHeading } from '../ui/AnimatedHeading';
 import { STUDIO_INFO } from '../../data/projects';
 
 export const ServicesOverview: React.FC = () => {
@@ -35,9 +36,10 @@ export const ServicesOverview: React.FC = () => {
       <div className="max-w-7xl mx-auto space-y-12 md:space-y-16">
         <div className="space-y-4">
           <SectionLabel label="DISCIPLINES & SERVICES" />
-          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-light tracking-tight uppercase">
-            CORE DISCIPLINES
-          </h2>
+          <AnimatedHeading
+            text="CORE DISCIPLINES"
+            className="font-display text-4xl sm:text-5xl md:text-6xl font-light tracking-tight uppercase text-white"
+          />
           <p className="font-editorial text-base sm:text-lg text-[#F2F2EE]/80 max-w-3xl leading-relaxed font-light pt-2">
             {STUDIO_INFO.placeholderCopy.servicesLeadIn}
           </p>

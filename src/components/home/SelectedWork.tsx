@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { SectionLabel } from '../ui/SectionLabel';
+import { AnimatedHeading } from '../ui/AnimatedHeading';
 import { ProjectCard } from '../projects/ProjectCard';
 import { PROJECTS } from '../../data/projects';
 
@@ -25,9 +26,10 @@ export const SelectedWork: React.FC = () => {
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
           <div className="space-y-4">
             <SectionLabel label="PORTFOLIO" />
-            <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-light tracking-tight uppercase">
-              OUR PROJECTS
-            </h2>
+            <AnimatedHeading
+              text="OUR PROJECTS"
+              className="font-display text-4xl sm:text-5xl md:text-6xl font-light tracking-tight uppercase text-white"
+            />
           </div>
 
           <Link
